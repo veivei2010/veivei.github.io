@@ -1,0 +1,92 @@
+:root {
+    /*css variable*/
+    --blue-background: #dbeafe;
+    --avatar-background: #9ca3af;
+    --avatar-border: 0 0 0 4px white;
+    --text-gray-1: #1f2937;
+    --text-gray-2: #6b7280;
+    --text-blue-1: #3b82f6;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  body {
+    height: 100vh; /*view height: 100% viewboard*/
+    background-color: var(--blue-background);
+    /*css flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wave {
+    /*css positioning*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  article {
+    max-width: 42rem; /*1 rem = 16 pixel*/
+    background-color: white;
+    border-radius: 0.5rem;
+    /*css box model*/
+    padding: 1.25rem;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .background-container {
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  
+  .background-cover {
+    width: 100%;
+  }
+  
+  .avatar {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--avatar-background);
+    border-radius: 100%;
+    /*css box model*/
+    margin-top: -4.5rem;
+    margin-left: 1rem;
+    box-shadow: var(--avatar-border);
+  }
+  
+  .info {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .profile {
+    margin-right: 3rem;
+  }
+  
+  .profile h1 {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--text-gray-1);
+  }
+  
+  .nickname,
+  .role,
+  .introduction {
+    /*ap dung cho ca 3 class*/
+    color: var(--text-gray-2);
+  }
+  
+  .role {
+    margin-top: 0.5rem;
+  }
+  
+  .profile a {
+    color: var(--text-blue-1);
+  }
+  
